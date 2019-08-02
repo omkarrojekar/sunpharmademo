@@ -51,7 +51,7 @@ class AdminLogin extends Component {
                 username: this.state.username,
                 password: this.state.password
             };
-            const url = 'http://rrcgvir.com/register/Register/adminlogin';
+            const url = 'https://www.rrcgvir.com/register/Register/adminlogin';
             const myheader = new Headers();
             myheader.append('Content-Type', 'application/json');
             const options = {
