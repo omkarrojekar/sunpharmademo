@@ -23,7 +23,7 @@ class DoctorLogin extends Component {
             getContactNumber: this.state.contact,
             getLinkId: this.state.linkId
         };
-        const url = 'http://rrcgvir.com/register/Register/getdoctorcredentials';
+        const url = 'https://rrcgvir.com/register/Register/getdoctorcredentials';
         const myheader = new Headers();
         myheader.append('Content-Type', 'application/json');
         const options = {
@@ -54,7 +54,7 @@ class DoctorLogin extends Component {
             getLinkId: this.state.linkId,
             otp: this.state.otp,
         };
-        const url = 'http://rrcgvir.com/register/Register/checkcredentials';
+        const url = 'https://rrcgvir.com/register/Register/checkcredentials';
         const myheader = new Headers();
         myheader.append('Content-Type', 'application/json');
         const options = {

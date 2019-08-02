@@ -22,8 +22,8 @@ class SendFile extends Component {
             getMrId: localStorage.getItem("userid"),
             getFileId:this.state.fileId
         };
-        const apiUrl = 'http://rrcgvir.com/register/Register/alldoctorsofmr/';
-        const apiUrl2 = 'http://rrcgvir.com/register/Register/getfile/';
+        const apiUrl = 'https://rrcgvir.com/register/Register/alldoctorsofmr/';
+        const apiUrl2 = 'https://rrcgvir.com/register/Register/getfile/';
         const myheader = new Headers();
         myheader.append('Content-Type', 'application/json');
         const options = {
@@ -67,7 +67,7 @@ class SendFile extends Component {
             doctorId: drId,
             filename: this.state.FileName,
         };   
-        const apiUrl = 'http://rrcgvir.com/register/Register/sendfiletodoctor/';
+        const apiUrl = 'https://rrcgvir.com/register/Register/sendfiletodoctor/';
         const myheader = new Headers();
         myheader.append('Content-Type', 'application/json');
         const options = {

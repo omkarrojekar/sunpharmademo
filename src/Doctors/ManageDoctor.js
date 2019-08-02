@@ -20,7 +20,7 @@ import {
     
 
     componentDidMount() {
-        const apiUrl = 'http://rrcgvir.com/register/Register/alldoctors/';
+        const apiUrl = 'https://rrcgvir.com/register/Register/alldoctors/';
         fetch(apiUrl)
             .then(res => res.json())
             .then(

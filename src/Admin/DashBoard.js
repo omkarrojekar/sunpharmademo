@@ -22,7 +22,7 @@ class DashBoard extends Component {
         };
     }
     componentDidMount() {
-        const apiUrl = 'http://rrcgvir.com/register/Register/getdashboarddetails/';
+        const apiUrl = 'https://rrcgvir.com/register/Register/getdashboarddetails/';
         fetch(apiUrl)
             .then(res => res.json())
             .then(

@@ -22,7 +22,7 @@ const datas = [];
     
 
     componentDidMount() {
-        const apiUrl = 'http://rrcgvir.com/register/';
+        const apiUrl = 'https://rrcgvir.com/register/';
         fetch(apiUrl)
         .then(res => res.json())
         .then(

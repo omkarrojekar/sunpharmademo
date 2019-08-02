@@ -22,7 +22,7 @@ class ViewSharedFile extends Component {
             getFileId: this.state.fileId,
             getSharedId: this.state.sharedId
         };
-        const url = 'http://rrcgvir.com/register/Register/getfile';
+        const url = 'https://rrcgvir.com/register/Register/getfile';
         const myheader = new Headers();
         myheader.append('Content-Type', 'application/json');
         const options = {
@@ -43,7 +43,7 @@ class ViewSharedFile extends Component {
                     this.setState({ error })
                 }
             )
-    const ApiUrl = 'http://rrcgvir.com/register/Register/changeviewstatus';
+    const ApiUrl = 'https://rrcgvir.com/register/Register/changeviewstatus';
         fetch(ApiUrl, options)
             .then(res => res.json())
             .then(

@@ -20,7 +20,7 @@ import {
      };
    }
    componentDidMount() {
-     const apiUrl = 'http://rrcgvir.com/register/Register/filesharing';
+     const apiUrl = 'https://rrcgvir.com/register/Register/filesharing';
      fetch(apiUrl)
        .then(res => res.json())
        .then(

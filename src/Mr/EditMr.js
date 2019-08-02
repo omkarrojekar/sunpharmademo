@@ -31,7 +31,7 @@ class EditMr extends Component {
         let data = {
             getMrId: this.state.mrId
         };
-        const url = 'http://rrcgvir.com/register/Register/getmr';
+        const url = 'https://rrcgvir.com/register/Register/getmr';
         const myheader = new Headers();
         myheader.append('Content-Type', 'application/json');
         const options = {
@@ -39,7 +39,7 @@ class EditMr extends Component {
             body: JSON.stringify(data),
             myheader
         };
-        //const apiUrl = 'http://rrcgvir.com/register/Register/';
+        //const apiUrl = 'https://rrcgvir.com/register/Register/';
         fetch(url, options)
             .then(res => res.json())
             .then(
@@ -71,7 +71,7 @@ class EditMr extends Component {
                 location: this.state.location,
                 id: this.state.mrId
             };
-            const url = 'http://rrcgvir.com/register/Register/updatemr';
+            const url = 'https://rrcgvir.com/register/Register/updatemr';
             const myheader = new Headers();
             myheader.append('Content-Type', 'application/json');
             const options = {

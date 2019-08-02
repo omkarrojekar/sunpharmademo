@@ -49,7 +49,7 @@ export default class Publish extends Component {
             base64: this.state.base64ofZFile,
             fileDescription: this.state.fileDescription,
         };
-        const url = 'http://rrcgvir.com/register/Register/publish';
+        const url = 'https://rrcgvir.com/register/Register/publish';
         const myheader = new Headers();
         myheader.append('Content-Type', 'application/json');
         const options = {

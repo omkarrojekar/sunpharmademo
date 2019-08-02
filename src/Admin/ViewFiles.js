@@ -17,7 +17,7 @@ import {
      }
 
      componentDidMount() {
-         const apiUrl = 'http://rrcgvir.com/register/Register/allfiles/';
+         const apiUrl = 'https://rrcgvir.com/register/Register/allfiles/';
          fetch(apiUrl)
              .then(res => res.json())
              .then(

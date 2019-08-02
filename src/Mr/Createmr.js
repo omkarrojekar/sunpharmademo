@@ -82,7 +82,7 @@ import {
                 location : this.state.location,
                 username: this.state.username
             };
-            const url = 'http://rrcgvir.com/register/Register/addmr';
+            const url = 'https://rrcgvir.com/register/Register/addmr';
             const myheader = new Headers();
             myheader.append('Content-Type','application/json');
             const options = {

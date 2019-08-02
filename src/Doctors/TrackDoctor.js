@@ -24,7 +24,7 @@ class TrackDoctor extends Component {
         let data = {
             getDoctorId: this.state.DoctorId
         };
-        const apiUrl = 'http://rrcgvir.com/register/Register/filesharingofdoctor';
+        const apiUrl = 'https://rrcgvir.com/register/Register/filesharingofdoctor';
         const myheader = new Headers();
         myheader.append('Content-Type', 'application/json');
         const options = {

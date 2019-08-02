@@ -46,7 +46,7 @@ class UserLogin extends Component {
                 username: this.state.username,
                 password: this.state.password
             };
-            const url = 'http://rrcgvir.com/register/Register/userlogin';
+            const url = 'https://rrcgvir.com/register/Register/userlogin';
             const myheader = new Headers();
             myheader.append('Content-Type', 'application/json');
             const options = {
