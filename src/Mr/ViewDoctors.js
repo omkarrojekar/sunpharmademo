@@ -32,7 +32,7 @@ class ViewDoctors extends Component {
             .then(
                 (result) => {
                     this.setState({
-                        products: result
+                        products: result.data
                     })
                     //console.log(result)
                 },

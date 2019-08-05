@@ -46,6 +46,7 @@ import TrackFiles from './Admin/TrackFiles';
 import DeleteMr from './Mr/DeleteMr';
 import ViewMrDoctor from './Mr/ViewMrDoctor';
 import Demo from './Admin/Demo' ;
+import DoctorsOfMr from './Mr/DoctorsOfMr';
 
 
 function App() 
@@ -73,6 +74,7 @@ function App()
             <Route path="/doctor/manage" exact component={ManageDoctor} />
             <Route path="/doctor/track/:id" exact component={TrackDoctor} />
             <Route path="/doctors" exact component={ViewDoctors} />
+            <Route path="/mr/doctors/:id" exact component={DoctorsOfMr} />
             <Route path="/doctor/:id" exact component={ViewDoctor} />
             <Route path="/doctor/delete/:id" exact component={DeleteDoctor} />
             <Route path="/doctor/edit/:id" exact component={EditDoctor} />

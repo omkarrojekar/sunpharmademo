@@ -96,7 +96,7 @@ const datas = [];
                                                         {products.map(item => (
                                                             <tr>
                                                                 <td>{item.id}</td>
-                                                                <td>{item.name}</td>
+                                                                <td><a className="doctor-link" href={"/mr/doctors/" + item.id}>{item.name}</a></td>
                                                                 <td>{item.email}</td>
                                                                 <td>{item.contact}</td>
                                                                 <td>{item.designation}</td>
