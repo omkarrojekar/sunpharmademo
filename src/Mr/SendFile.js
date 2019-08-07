@@ -36,7 +36,7 @@ class SendFile extends Component {
             .then(
                 (result) => {
                     this.setState({
-                        products: result
+                        products: result.data
                     })
                     //console.log(result)
                 },
@@ -80,7 +80,7 @@ class SendFile extends Component {
             .then(
                 (result) => {
                     //alert(result)
-                    console.log(result)
+                    //console.log(result)
                 },
                 (error) => {
                     alert(error)
