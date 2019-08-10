@@ -27,7 +27,7 @@ import {
     }
 
     componentDidMount() {
-        const apiUrl = 'https://rrcgvir.com/register/Register';
+        const apiUrl = 'https://rrcgvir.com/register/register';
         fetch(apiUrl)
             .then(res => res.json())
             .then(
@@ -94,7 +94,7 @@ import {
                 contact: this.state.contact,
                 mrId: this.state.mrId
             };
-            const url = 'https://rrcgvir.com/register/Register/adddoctor';
+            const url = 'https://rrcgvir.com/register/register/adddoctor';
             const myheader = new Headers();
             myheader.append('Content-Type', 'application/json');
             const options = {

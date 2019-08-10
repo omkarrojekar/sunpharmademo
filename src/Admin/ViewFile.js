@@ -21,7 +21,7 @@ class ViewFile extends Component {
         let data = {
             getFileId: this.state.fileId
         };
-        const url = 'https://rrcgvir.com/register/Register/getfile';
+        const url = 'https://rrcgvir.com/register/register/getfile';
         const myheader = new Headers();
         myheader.append('Content-Type', 'application/json');
         const options = {

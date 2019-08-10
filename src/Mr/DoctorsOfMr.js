@@ -23,7 +23,7 @@ import {
          let data = {
              getMrId: this.state.MrId
          };
-         const apiUrl = 'https://rrcgvir.com/register/Register/alldoctorsofmr/';
+         const apiUrl = 'https://rrcgvir.com/register/register/alldoctorsofmr/';
          const myheader = new Headers();
          myheader.append('Content-Type', 'application/json');
          const options = {

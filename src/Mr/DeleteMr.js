@@ -15,7 +15,7 @@ class DeleteMr extends Component {
         let data = {
             getMrId: this.state.mrId
         };
-        const url = 'https://rrcgvir.com/register/Register/deletemr';
+        const url = 'https://rrcgvir.com/register/register/deletemr';
         const myheader = new Headers();
         myheader.append('Content-Type', 'application/json');
         const options = {
@@ -23,7 +23,7 @@ class DeleteMr extends Component {
             body: JSON.stringify(data),
             myheader
         };
-        //const apiUrl = 'https://rrcgvir.com/register/Register/';
+        //const apiUrl = 'https://rrcgvir.com/register/register/';
         fetch(url, options)
             .then(res => res.json())
             .then(

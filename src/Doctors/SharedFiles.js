@@ -22,7 +22,7 @@ class SharedFiles extends Component {
         let data = {
             doctorId: localStorage.getItem("userid")
         };
-        const apiUrl = 'https://rrcgvir.com/register/Register/getallsharedfileswithdoctor/';
+        const apiUrl = 'https://rrcgvir.com/register/register/getallsharedfileswithdoctor/';
         const myheader = new Headers();
         myheader.append('Content-Type', 'application/json');
         const options = {

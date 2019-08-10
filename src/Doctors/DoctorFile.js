@@ -21,7 +21,7 @@ class DoctorFile extends Component {
         let data = {
             getLinkId: this.state.linkId
         };
-        const url = 'https://rrcgvir.com/register/Register/adddownloaddate';
+        const url = 'https://rrcgvir.com/register/register/adddownloaddate';
         const myheader = new Headers();
         myheader.append('Content-Type', 'application/json');
         const options = {
@@ -47,7 +47,7 @@ class DoctorFile extends Component {
             getFileId: this.state.fileId,
             getLinkId: this.state.linkId
         };
-        const url = 'https://rrcgvir.com/register/Register/getdoctorfile';
+        const url = 'https://rrcgvir.com/register/register/getdoctorfile';
         const myheader = new Headers();
         myheader.append('Content-Type', 'application/json');
         const options = {
