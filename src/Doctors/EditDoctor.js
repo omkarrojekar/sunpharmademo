@@ -32,7 +32,7 @@ class EditDoctor extends Component {
         let data = {
             getDoctorId: this.state.doctorId
         };
-        const url = 'https://rrcgvir.com/register/register/getdoctor';
+        const url = 'http://35.154.116.123/sunpharma/register/getdoctor';
         const myheader = new Headers();
         myheader.append('Content-Type', 'application/json');
         const options = {
@@ -40,7 +40,7 @@ class EditDoctor extends Component {
             body: JSON.stringify(data),
             myheader
         };
-        //const apiUrl = 'https://rrcgvir.com/register/register/';
+        //const apiUrl = 'http://35.154.116.123/sunpharma/register/';
         fetch(url, options)
             .then(res => res.json())
             .then(
@@ -60,7 +60,7 @@ class EditDoctor extends Component {
                 }
             )
 
-        const apiUrl = 'https://rrcgvir.com/register/register';
+        const apiUrl = 'http://35.154.116.123/sunpharma/register';
         fetch(apiUrl)
             .then(res => res.json())
             .then(
@@ -85,7 +85,7 @@ class EditDoctor extends Component {
             doctorId: this.state.doctorId
         };
         console.log(data);
-        const url = 'https://rrcgvir.com/register/register/updatedoctor';
+        const url = 'http://35.154.116.123/sunpharma/register/updatedoctor';
         const myheader = new Headers();
         myheader.append('Content-Type', 'application/json');
         const options = {

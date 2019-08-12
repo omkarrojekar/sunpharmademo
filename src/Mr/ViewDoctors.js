@@ -19,7 +19,7 @@ class ViewDoctors extends Component {
         let data = {
             getMrId: localStorage.getItem("userid")
         };
-        const apiUrl = 'https://rrcgvir.com/register/register/alldoctorsofmr/';
+        const apiUrl = 'http://35.154.116.123/sunpharma/register/alldoctorsofmr/';
         const myheader = new Headers();
         myheader.append('Content-Type', 'application/json');
         const options = {

@@ -22,7 +22,7 @@ const datas = [];
     
 
     componentDidMount() {
-        const apiUrl = 'https://rrcgvir.com/register/';
+        const apiUrl = 'http://35.154.116.123/sunpharma/';
         fetch(apiUrl)
         .then(res => res.json())
         .then(

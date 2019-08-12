@@ -20,7 +20,7 @@ import {
     
 
     componentDidMount() {
-        const apiUrl = 'https://rrcgvir.com/register/register/alldoctors/';
+        const apiUrl = 'http://35.154.116.123/sunpharma/register/alldoctors/';
         fetch(apiUrl)
             .then(res => res.json())
             .then(

@@ -21,7 +21,7 @@ class ViewFile extends Component {
         let data = {
             getFileId: this.state.fileId
         };
-        const url = 'https://rrcgvir.com/register/register/getfile';
+        const url = 'http://35.154.116.123/sunpharma/register/getfile';
         const myheader = new Headers();
         myheader.append('Content-Type', 'application/json');
         const options = {
