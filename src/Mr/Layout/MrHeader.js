@@ -7,14 +7,14 @@ class MrHeader extends Component {
                 <div className="topbar">
                     <div className="topbar-left">
                         <div className="text-center">
-                            <a href="/mr/dashboard" className="logo"><img src="../assets/assets/images/users/favicon.jpg" alt="" className="img img-responsive logo-img" /><span> MR</span></a>
+                            <a href="/mr/dashboard" className="logo"><img src={window.location.origin.toString()+"/assets/assets/images/users/favicon.jpg"} alt="" className="img img-responsive logo-img" /><span> MR</span></a>
                         </div>
                     </div>
                     <nav className="navbar-custom">
                         <ul className="list-inline float-right mb-0">
                             <li className="list-inline-item dropdown notification-list">
                                 <a className="nav-link dropdown-toggle waves-effect waves-light nav-user" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
-                                    <img src="../assets/assets/images/users/avatar-1.jpg" alt="user" className="rounded-circle" />
+                                    <img src={window.location.origin.toString()+"/assets/assets/images/users/avatar-1.jpg"} alt="user" className="rounded-circle" />
                                 </a>
                                 <div className="dropdown-menu dropdown-menu-right profile-dropdown " aria-labelledby="Preview">
                                     <div className="dropdown-item noti-title">

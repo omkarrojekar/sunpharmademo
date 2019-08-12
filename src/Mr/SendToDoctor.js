@@ -101,7 +101,7 @@ class SendToDoctor extends Component {
                                            <div className="col-4">
                                                <div className="card-box table-bordered">
                                                    <QRCode
-                                                       value={"https://sunpharmademo.herokuapp.com/login/" + this.state.linkId + "/" + this.state.contact}
+                                                       value={window.location.origin.toString()+"/login/"+ this.state.linkId + "/" + this.state.contact}
                                                        size={128}
                                                        level={'H'}
                                                    />
