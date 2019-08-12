@@ -21,7 +21,7 @@ class DoctorFile extends Component {
         let data = {
             getLinkId: this.state.linkId
         };
-        const url = 'http://35.154.116.123/sunpharma/register/adddownloaddate';
+        const url = 'https://35.154.116.123/sunpharma/register/adddownloaddate';
         const myheader = new Headers();
         myheader.append('Content-Type', 'application/json');
         const options = {
@@ -47,7 +47,7 @@ class DoctorFile extends Component {
             getFileId: this.state.fileId,
             getLinkId: this.state.linkId
         };
-        const url = 'http://35.154.116.123/sunpharma/register/getdoctorfile';
+        const url = 'https://35.154.116.123/sunpharma/register/getdoctorfile';
         const myheader = new Headers();
         myheader.append('Content-Type', 'application/json');
         const options = {

@@ -27,7 +27,7 @@ class SendToDoctor extends Component {
             getFileId:this.state.fileId,
             mrId: localStorage.getItem("userid")
         };
-        const url = 'http://35.154.116.123/sunpharma/register/getfile';
+        const url = 'https://35.154.116.123/sunpharma/register/getfile';
         const myheader = new Headers();
         myheader.append('Content-Type', 'application/json');
         const options = {
@@ -35,7 +35,7 @@ class SendToDoctor extends Component {
             body: JSON.stringify(data),
             myheader
         };
-        //const apiUrl = 'http://35.154.116.123/sunpharma/register/';
+        //const apiUrl = 'https://35.154.116.123/sunpharma/register/';
         fetch(url, options)
             .then(res => res.json())
             .then(
@@ -48,7 +48,7 @@ class SendToDoctor extends Component {
             )
 
 
-        const apiUrl = 'http://35.154.116.123/sunpharma/register/sendfiletodoctor/';
+        const apiUrl = 'https://35.154.116.123/sunpharma/register/sendfiletodoctor/';
         fetch(apiUrl,options)
             .then(res => res.json())
             .then(

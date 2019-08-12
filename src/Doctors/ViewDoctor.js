@@ -24,7 +24,7 @@ class ViewDoctor extends Component {
         let data = {
             getDoctorId: this.state.doctorId
         };
-        const url = 'http://35.154.116.123/sunpharma/register/getdoctor';
+        const url = 'https://35.154.116.123/sunpharma/register/getdoctor';
         const myheader = new Headers();
         myheader.append('Content-Type', 'application/json');
         const options = {
@@ -32,7 +32,7 @@ class ViewDoctor extends Component {
             body: JSON.stringify(data),
             myheader
         };
-        //const apiUrl = 'http://35.154.116.123/sunpharma/register/';
+        //const apiUrl = 'https://35.154.116.123/sunpharma/register/';
         fetch(url, options)
             .then(res => res.json())
             .then(

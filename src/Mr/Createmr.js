@@ -82,7 +82,7 @@ import {
                 location : this.state.location,
                 username: this.state.username
             };
-            const url = 'http://35.154.116.123/sunpharma/register/addmr';
+            const url = 'https://35.154.116.123/sunpharma/register/addmr';
             const myheader = new Headers();
             myheader.append('Content-Type','application/json');
             const options = {

@@ -23,7 +23,7 @@ import {
          let data = {
              getMrId: this.state.MrId
          };
-         const apiUrl = 'http://35.154.116.123/sunpharma/register/alldoctorsofmr/';
+         const apiUrl = 'https://35.154.116.123/sunpharma/register/alldoctorsofmr/';
          const myheader = new Headers();
          myheader.append('Content-Type', 'application/json');
          const options = {
