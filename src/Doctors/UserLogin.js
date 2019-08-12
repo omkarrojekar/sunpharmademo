@@ -46,7 +46,7 @@ class UserLogin extends Component {
                 username: this.state.username,
                 password: this.state.password
             };
-            const url = 'https://35.154.116.123/sunpharma/register/userlogin';
+            const url = 'http://35.154.116.123/sunpharma/register/userlogin';
             const myheader = new Headers();
             myheader.append('Content-Type', 'application/json');
             const options = {

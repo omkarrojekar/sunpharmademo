@@ -22,7 +22,7 @@ const datas = [];
     
 
     componentDidMount() {
-        const apiUrl = 'https://35.154.116.123/sunpharma/';
+        const apiUrl = 'http://35.154.116.123/sunpharma/';
         fetch(apiUrl)
         .then(res => res.json())
         .then(
