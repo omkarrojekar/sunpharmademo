@@ -34,7 +34,7 @@ class DoctorFile extends Component {
             .then(
                 (result) => {
                     //console.log(result[0].mr)
-                    console.log(result)
+                    //  console.log(result)
                 },
                 (error) => {
                     this.setState({ error })
@@ -65,7 +65,7 @@ class DoctorFile extends Component {
                         IsDownload:result.isDownload
                         
                     })
-                    console.log(result)
+                    //console.log(result)
                 },
                 (error) => {
                     this.setState({ error })
@@ -79,8 +79,8 @@ class DoctorFile extends Component {
        {
            return(
             <React.Fragment>
-            <h1 className="text text-center">File Is Not Available</h1>
-                   {IsDownload == 'not yet' ? <a href={SingleFile} download className="btn btn-info" onClick={e => this.handleClick(e)}>Downlaod</a>: ""} 
+            <h1 className="text text-center"></h1>
+                   {IsDownload == 'not yet' ? <a href={SingleFile} download className="btn btn-info" onClick={e => this.handleClick(e)}>Download</a>: ""} 
             </React.Fragment>   
            )
        }

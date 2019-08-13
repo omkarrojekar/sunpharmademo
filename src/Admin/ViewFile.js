@@ -56,7 +56,7 @@ class ViewFile extends Component {
             <React.Fragment>
                 <div className="box">
                     {SingleFile.map(item => (
-                        <a href={item.base64} download={ item.name } className="btn btn-info text-center">Downlaod</a>
+                        <a href={item.base64} download={ item.name } className="btn btn-info text-center">Download</a>
                     ))}
                 </div>
                 {SingleFile.map(item => (
