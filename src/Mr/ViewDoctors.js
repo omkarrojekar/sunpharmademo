@@ -66,7 +66,7 @@ class ViewDoctors extends Component {
 
                                             <h4 className="page-title">Welcome {localStorage.getItem("username")}</h4>
                                             <ol className="breadcrumb">
-                                                <li className="breadcrumb-item"><a href="#">Marketing Reprentative</a></li>
+                                                <li className="breadcrumb-item"><a href="#">Medical Reprentative</a></li>
                                                 <li className="breadcrumb-item"><a href="#">Dashboard</a></li>
                                                 <li className="breadcrumb-item active">Doctors</li>
                                             </ol>

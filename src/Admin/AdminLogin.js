@@ -137,7 +137,6 @@ class AdminLogin extends Component {
 
                                         <div className="form-group m-t-20 m-b-0">
                                             <div className="col-12">
-                                                <a href="page-recoverpw.html" class="text-dark"><i class="fa fa-lock m-r-5"></i> Forgot your password?</a>
                                             </div>
                                         </div>
                                     </form>

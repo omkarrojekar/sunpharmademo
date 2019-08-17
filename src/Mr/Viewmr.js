@@ -65,7 +65,7 @@ import {
                                 <ol className="breadcrumb">
                                     <li className="breadcrumb-item"><a href="#">Admin</a></li>
                                     <li className="breadcrumb-item"><a href="#">Dashboard</a></li>
-                                    <li className="breadcrumb-item active">View Marketing Representative</li>
+                                    <li className="breadcrumb-item active">View Medical Representative</li>
                                 </ol>
 
                             </div>
@@ -74,7 +74,7 @@ import {
                         <div className="container mt-5">
                             {SingleMr.map(item => (
                                 <div className="card-box">
-                                    <h2 className="text-center text-warning">View Marketing Reprentative</h2>
+                                    <h2 className="text-center text-warning">View Medical Reprentative</h2>
                                     <hr />
                                     <p><strong>Name</strong>: {item.name}</p>
                                     <p><strong>Email</strong>: {item.email}</p>

@@ -26,7 +26,7 @@ class MrDashBoard extends Component {
 
                                     <h4 className="page-title">Welcome {localStorage.getItem("username")}</h4>
                                     <ol className="breadcrumb">
-                                        <li className="breadcrumb-item"><a href="#">Marketing Reprensentative</a></li>
+                                        <li className="breadcrumb-item"><a href="#">Medical Reprensentative</a></li>
                                         <li className="breadcrumb-item"><a href="#">Dashboard</a></li>
                                         <li className="breadcrumb-item active">Home</li>
                                     </ol>

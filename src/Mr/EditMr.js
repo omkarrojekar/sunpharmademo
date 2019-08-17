@@ -120,7 +120,7 @@ class EditMr extends Component {
                                     <ol className="breadcrumb">
                                         <li className="breadcrumb-item"><a href="#">Admin</a></li>
                                         <li className="breadcrumb-item"><a href="#">Dashboard</a></li>
-                                        <li className="breadcrumb-item active">Update Marketing Representative</li>
+                                        <li className="breadcrumb-item active">Update Medical Representative</li>
                                     </ol>
 
                                 </div>
@@ -128,7 +128,7 @@ class EditMr extends Component {
 
                             <div className="container mt-5">
                                 <div className="card-box">
-                                    <h2 className="text-center text-warning">Update Marketing Reprentative</h2>
+                                    <h2 className="text-center text-warning">Update Medical Reprentative</h2>
                                 <hr />
                                     {this.state.ShowMessage == true ? <div><p className="alert alert-success">{this.state.message}</p></div> : <div></div>}
                                 {SingleMr.map(item => (

@@ -109,7 +109,7 @@ class UserLogin extends Component {
                         <div className="wrapper-page">
                             <div className="card-box">
                                 <div className="panel-heading">
-                                    <h4 class="text-center"><strong class="text-custom">Marketing Representative</strong> Login</h4>
+                                    <h4 class="text-center"><strong class="text-custom">Medical Representative</strong> Login</h4>
                                 </div>
                                 {this.state.ShowMessage == true ? <div><p className="alert alert-danger">{this.state.message}</p></div> : <div></div>}
 
@@ -140,7 +140,6 @@ class UserLogin extends Component {
 
                                         <div className="form-group m-t-20 m-b-0">
                                             <div className="col-12">
-                                                <a href="page-recoverpw.html" class="text-dark"><i class="fa fa-lock m-r-5"></i> Forgot your password?</a>
                                             </div>
                                         </div>
                                     </form>

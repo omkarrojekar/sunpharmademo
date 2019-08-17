@@ -13,8 +13,8 @@ import {
         }
     }
      componentDidMount() {
-         //axios.get(`http://192.168.0.3/register/Register/alldoctors/`)
-         axios.get(`http://35.154.116.123/sunpharma/register/alldoctors/`)
+         //axios.get(`http://35.154.116.123/sunpharma/Register/alldoctors/`)
+         axios.get(`http://35.154.116.123/sunpharma/alldoctors/`)
          .then(( res ) =>{
              console.log(res)
             this.setState({values:res.data})

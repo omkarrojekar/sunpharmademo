@@ -132,7 +132,7 @@ import {
                                     <li className="breadcrumb-item"><a href="#">Admin</a></li>
                                     <li className="breadcrumb-item"><a href="#">Dashboard</a></li>
                                     <li className="breadcrumb-item active">MR</li>
-                                        <li className="breadcrumb-item active">Create Marketing Representative</li>
+                                        <li className="breadcrumb-item active">Create Medical Representative</li>
                                 </ol>
 
                             </div>
@@ -140,7 +140,7 @@ import {
                             <div className="container mt-5">
                         <div className="text-danger text-success">{this.state.message}</div>
                         <div className="card-box">
-                                    <h2 className="text-center text-success">New Marketing Representative</h2>
+                                    <h2 className="text-center text-success">New Medical Representative</h2>
                                     <hr />
                                 {this.state.ShowMessage == true ? <div><p className="alert alert-success">{this.state.message}</p></div> : <div></div>}
                             <form onSubmit={this.save_details}>

@@ -22,7 +22,7 @@ const datas = [];
     
 
     componentDidMount() {
-        const apiUrl = 'http://35.154.116.123/sunpharma/';
+        const apiUrl = 'http://35.154.116.123/sunpharma/register/';
         fetch(apiUrl)
         .then(res => res.json())
         .then(
@@ -67,7 +67,7 @@ const datas = [];
                                         <ol className="breadcrumb">
                                             <li className="breadcrumb-item"><a href="#">Admin</a></li>
                                             <li className="breadcrumb-item"><a href="#">Dashboard</a></li>
-                                            <li className="breadcrumb-item active">Manage Marketing Representative</li>
+                                            <li className="breadcrumb-item active">Manage Medical Representative</li>
                                         </ol>
 
                                     </div>
@@ -78,7 +78,7 @@ const datas = [];
                                     <div className="row">
                                         <div className="col-12">
                                             <div className="card-box table-responsive react-data-table-component">
-                                                <h2 className="m-t-0  text-center text-warning">Marketing Representative</h2>
+                                                <h2 className="m-t-0  text-center text-warning">Medical Representative</h2>
                                                 <table id="datatable" class="table table-bordered">
                                                     <thead>
                                                         <tr>
