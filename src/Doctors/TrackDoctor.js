@@ -46,6 +46,10 @@ class TrackDoctor extends Component {
                     this.setState({ error })
                 }
             )
+        this.count = 1;
+    }
+    increase_count() {
+        this.count = this.count + 1
     }
     render() {
         if (localStorage.getItem("id") != null) {
@@ -82,6 +86,7 @@ class TrackDoctor extends Component {
                                                 <table id="datatable" class="table  table-bordered">
                                                     <thead>
                                                         <tr>
+                                                            <th>Sr No</th>
                                                             <th>File Name</th>
                                                             <th>SHARE BY</th>
                                                             <th>SHARED ON</th>
@@ -96,6 +101,8 @@ class TrackDoctor extends Component {
                                                         {products == "" ? <tr><td colSpan="6" className="text text-center">No Files shared with {this.state.DoctorName}</td></tr> : <div></div>}
                                                         {products.map(item => (
                                                             <tr>
+                                                                <td>{this.count}</td>
+                                                                {this.increase_count()}
                                                                 <td>{item.filename}</td>
                                                                 <td>{item.mrname}</td>
                                                                 <td>{item.send_on}</td>

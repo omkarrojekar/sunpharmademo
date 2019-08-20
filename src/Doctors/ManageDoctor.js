@@ -16,8 +16,11 @@ import {
             Doctor_Name : ''
 
         };
+        this.count = 1;
     }
-    
+     increase_count() {
+         this.count = this.count + 1
+     }
 
     componentDidMount() {
         const apiUrl = 'http://35.154.116.123/sunpharma/register/alldoctors/';
@@ -130,7 +133,7 @@ import {
                                                 <table id="datatable" className="table table-bordered" cellspacing="0" width="100%">
                                                     <thead>
                                                         <tr>
-                                                            <th>ID</th>
+                                                            <th>Sr No</th>
                                                             <th>NAME</th>
                                                             <th>EMAIL</th>
                                                             <th>CONTACT</th>
@@ -143,12 +146,13 @@ import {
                                                     <tbody>
                                                         {products.map(item => (
                                                             <tr>
-                                                                <td>{item.id}</td>
+                                                                <td>{this.count}</td>
+                                                                {this.increase_count()}
                                                                 <td><a className="doctor-link" href={"/doctor/track/"+item.id}>{"Dr. "+item.name}</a></td>
                                                                 <td>{item.email}</td>
                                                                 <td>{item.contact}</td>
                                                                 <td>{item.mrname}</td>
-                                                                <td><a href={item.id} ><button className="btn btn-info">View</button></a><a href={"/doctor/delete/"+item.id}><button className="btn btn-danger">Delete</button></a></td>
+                                                                <td><a href={"/doctor/1"} ><button className="btn btn-info">View</button></a><a href={"/doctor/delete/"+item.id}><button className="btn btn-danger">Delete</button></a></td>
                                                             </tr>
                                                         ))}
                                                     </tbody>

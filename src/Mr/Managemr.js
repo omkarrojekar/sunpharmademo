@@ -9,7 +9,7 @@ import {
 } from "react-router-dom";
 
 const datas = [];
- class Managemr extends Component {
+ class Managemr extends Component { 
      
      
     constructor(props){
@@ -18,8 +18,12 @@ const datas = [];
             error:null,
             products: [],
         };
+        this.count = 1;
     }
-    
+     increase_count()
+     {
+         this.count = this.count + 1
+     }
 
     componentDidMount() {
         const apiUrl = 'http://35.154.116.123/sunpharma/register/';
@@ -82,7 +86,7 @@ const datas = [];
                                                 <table id="datatable" class="table table-bordered">
                                                     <thead>
                                                         <tr>
-                                                            <th>ID</th>
+                                                            <th>Sr No</th>
                                                             <th>NAME</th>
                                                             <th>EMAIL</th>
                                                             <th>CONTACT</th>
@@ -95,7 +99,8 @@ const datas = [];
                                                     <tbody>
                                                         {products.map(item => (
                                                             <tr>
-                                                                <td>{item.id}</td>
+                                                                <td>{this.count}</td>
+                                                                {this.increase_count()}
                                                                 <td><a className="doctor-link" href={"/mr/doctors/" + item.id}>{item.name}</a></td>
                                                                 <td>{item.email}</td>
                                                                 <td>{item.contact}</td>

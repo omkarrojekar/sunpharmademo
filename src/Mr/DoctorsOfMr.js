@@ -45,6 +45,10 @@ import {
                      this.setState({ error })
                  }
              )
+         this.count = 1;
+     }
+     increase_count() {
+         this.count = this.count + 1
      }
   render() {
       if (localStorage.getItem("id") != null)
@@ -82,9 +86,11 @@ import {
                                               <table id="datatable" class="table table-bordered">
                                                   <thead>
                                                       <tr>
+                                                          <th>Sr No</th>
                                                           <th>NAME</th>
                                                           <th>EMAIL</th>
                                                           <th>CONTACT</th>
+                                                          <th>Action</th>
                                                       </tr>
                                                   </thead>
 
@@ -92,9 +98,12 @@ import {
                                                   <tbody>
                                                       {products.map(item => (
                                                           <tr>
+                                                              <td>{this.count}</td>
+                                                              {this.increase_count()}
                                                               <td><a className="doctor-link" href={"/doctor/track/" + item.id}>{"Dr. " + item.name}</a></td>
                                                               <td>{item.email}</td>
                                                               <td>{item.contact}</td>
+                                                              <td><a href={window.location.origin.toString()+"/doctor/"+item.id} ><button className="btn btn-info">View</button></a><a href={"/doctor/delete/"+item.id}><button className="btn btn-danger">Delete</button></a></td>
                                                           </tr>
                                                       ))}
                                                   </tbody>

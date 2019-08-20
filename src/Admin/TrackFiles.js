@@ -34,6 +34,10 @@ import {
            this.setState({ error })
          }
        )
+     this.count = 1;
+   }
+   increase_count() {
+     this.count = this.count + 1
    }
    render() {
      if (localStorage.getItem("id") != null) {
@@ -70,6 +74,7 @@ import {
                          <table id="datatable" class="table table-responsive table-bordered">
                            <thead>
                              <tr>
+                               <th>Sr No</th>
                                <th>Dr. NAME</th>
                                <th>File Name</th>
                                <th>SHARE BY</th>
@@ -84,6 +89,8 @@ import {
                            <tbody>
                              {products.map(item => (
                                <tr>
+                                 <td>{this.count}</td>
+                                 {this.increase_count()}
                                  <td>{item.drname}</td>
                                  <td>{item.filename}</td>
                                  <td>{item.mrname}</td>

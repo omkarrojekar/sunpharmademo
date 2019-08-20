@@ -58,8 +58,11 @@ class SendFile extends Component {
                     this.setState({ error })
                 }
             )
+        this.count = 1;
     }
-
+    increase_count() {
+        this.count = this.count + 1
+    }
     send_file_to_doctor = (drId,fileId) =>
     {
         let data = {
@@ -128,7 +131,7 @@ class SendFile extends Component {
                                                     <table id="datatable-buttons" className="table table-striped" cellspacing="0" width="100%">
                                                         <thead>
                                                             <tr>
-                                                                <th>ID</th>
+                                                                <th>Sr No</th>
                                                                 <th>NAME</th>
                                                                 <th>EMAIL</th>
                                                                 <th>ACTION</th>
@@ -139,7 +142,8 @@ class SendFile extends Component {
                                                         <tbody>
                                                             {products.map(item => (
                                                                 <tr>
-                                                                    <td>{item.id}</td>
+                                                                    <td>{this.count}</td>
+                                                                    {this.increase_count()}
                                                                     <td>{item.name}</td>
                                                                     <td>{item.email}</td>
                                                                     <td><a href={"/send/file/" + item.id +"/"+ this.state.fileId + "/"} ><button className="btn btn-info">Send</button></a></td>

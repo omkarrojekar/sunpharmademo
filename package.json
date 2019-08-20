@@ -23,7 +23,7 @@
     "styled-components": "^4.3.2",
     "sweetalert-react": "^0.4.11"
   },
-  "homepage": "https://omkarrojekar.github.io/sunpharmademo",
+  "homepage": "http://sunpharmaspecialitycare.com.s3-website.ap-south-1.amazonaws.com/",
   "scripts": {
     "start": "react-scripts start",
     "predeploy": "npm run build",

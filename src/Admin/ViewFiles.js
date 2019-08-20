@@ -30,6 +30,10 @@ import {
                      this.setState({ error })
                  }
              )
+         this.count = 1;
+     }
+     increase_count() {
+         this.count = this.count + 1
      }
     render() {
         if(localStorage.getItem("id") != null)
@@ -63,7 +67,7 @@ import {
                                         <table id="datatable-buttons" className="table  table-bordered" cellspacing="0" width="100%">
                                             <thead>
                                                 <tr>
-                                                    <th>ID</th>
+                                                    <th>Sr No</th>
                                                     <th>NAME</th>
                                                     <th>DESCRIPTION</th>
                                                     <th>UPLOADED ON</th>
@@ -75,7 +79,8 @@ import {
                                             <tbody>
                                                 {products.map(item => (
                                                     <tr>
-                                                        <td>{item.id}</td>
+                                                        <td>{this.count}</td>
+                                                        {this.increase_count()}
                                                         <td>{item.name}</td>
                                                         <td>{item.description}</td>
                                                         <td>{item.date}</td>
