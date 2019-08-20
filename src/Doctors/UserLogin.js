@@ -86,21 +86,13 @@ class UserLogin extends Component {
     render () {
         if ((localStorage.getItem("userid") != null) && (localStorage.getItem("userrole") == "mr")) 
         {
-                return(
-                    <React.Fragment>
-                        <Redirect to="/mr/dashboard" />
-                    </React.Fragment>
-                )
+            window.location.href = window.location.origin.toString() + "/mr/dashboard";
         }
         else
         {
             if(this.state.redirect == true)
             {
-                return(
-                    <React.Fragment>
-                        <Redirect to="/mr/dashboard" />
-                    </React.Fragment>
-                )
+                window.location.href = window.location.origin.toString() +"/mr/dashboard";
             }
             else
             {

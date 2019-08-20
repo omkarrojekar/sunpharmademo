@@ -92,13 +92,15 @@ class AdminLogin extends Component {
     render () {
         if(localStorage.getItem("id") != null)
         {
-            return (<Redirect to="/dashboard" />)
+            //return (<Redirect to="/dashboard" refresh="true"/>)
+            window.location.href = window.location.origin.toString() + "/dashboard";
         }
         else
         {
             if(this.state.redirect == true)
             {
-                        return (<Redirect to="/dashboard" />)
+                //return (<Redirect to="/dashboard" refresh="true"/>)
+                window.location.href = window.location.origin.toString() + "/dashboard";
             }
             else{
                 return (

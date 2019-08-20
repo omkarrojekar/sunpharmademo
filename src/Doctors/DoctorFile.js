@@ -87,6 +87,7 @@ class DoctorFile extends Component {
         return (
             <React.Fragment>
                     <object data={SingleFile} className="viewfile col-sm-12 col-md-12"></object>
+                <a href={SingleFile} download className="btn btn-info" onClick={e => this.handleClick(e)}>Download</a>
             </React.Fragment>
         )
     }
