@@ -83,7 +83,7 @@ class ViewMrDoctor extends Component {
                                             <div className="card-box">
                                                 <h2 className="text-center text-warning">View Doctor</h2>
                                                 <hr />
-                                                <p><strong>Name</strong>: {item.name}</p>
+                                                <p><strong>Name</strong>: Dr. {item.name}</p>
                                                 <p><strong>Email</strong>: {item.email}</p>
                                                 <p><strong>Contact</strong>: {item.contact}</p>
                                                 <hr />

@@ -98,7 +98,7 @@ class SendToDoctor extends Component {
                                            <div className="card-box table-responsive">
                                                <h3 className="text text-warning">{this.state.message}</h3>
                                            </div>
-                                           <div className="col-4">
+                                           <div className="col-sm-4 col-md-4 col-lg-4">
                                                <div className="card-box table-bordered">
                                                    <QRCode
                                                        value={window.location.origin.toString()+"/login/"+ this.state.linkId + "/" + this.state.contact}
