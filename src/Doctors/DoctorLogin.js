@@ -90,11 +90,7 @@ class DoctorLogin extends Component {
       const redirectToReferrer = this.state.redirect;
       if (redirectToReferrer == 'true') 
       {
-          return(
-              <React.Fragment>
-                  <Redirect to={"/file/" + this.state.fileId * 1532358 + "/" + this.state.linkId} />
-              </React.Fragment>
-          )
+          window.location.href = window.location.origin.toString() + "/file/" + this.state.fileId * 1532358 + "/" + this.state.linkId;
       }
       else
       {
