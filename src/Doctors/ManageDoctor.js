@@ -17,9 +17,9 @@ import {
 
         };
         this.count = 1;
-    }http://sunpharma.xyz/register
+    }
      increase_count() {
-         this.count = this.count + 1
+         this.count = this.count + 1;
      }
 
     componentDidMount() {
