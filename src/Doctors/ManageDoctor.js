@@ -23,7 +23,7 @@ import {
      }
 
     componentDidMount() {
-        const apiUrl = 'http://35.154.116.123/sunpharma/register/alldoctors/';
+        const apiUrl = 'http://192.168.0.4/register/register/alldoctors/';
         fetch(apiUrl)
             .then(res => res.json())
             .then(

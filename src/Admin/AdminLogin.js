@@ -51,9 +51,11 @@ class AdminLogin extends Component {
                 username: this.state.username,
                 password: this.state.password
             };
-            const url = 'http://35.154.116.123/sunpharma/register/adminlogin';
+            const url = 'http://www.sunpharma.xyz/register/adminlogin';
             const myheader = new Headers();
             myheader.append('Content-Type', 'application/json');
+            myheader.append('Access-Control-Allow-Origin', 'http://localhost:3000');
+            myheader.append('Access-Control-Allow-Credentials', 'true');
             const options = {
                 method: 'POST',
                 body: JSON.stringify(data),

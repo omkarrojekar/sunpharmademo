@@ -60,7 +60,7 @@ class ChangePassword extends Component {
                 confirmPassword:this.state.confirmPassword,
             };
             //console.log(data)
-            const url = 'http://35.154.116.123/sunpharma/register/changepassword';
+            const url = 'http://192.168.0.4/register/register/changepassword';
             const myheader = new Headers();
             myheader.append('Content-Type', 'application/json');
             const options = {

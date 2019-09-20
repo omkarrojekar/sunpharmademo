@@ -22,7 +22,7 @@ class DashBoard extends Component {
         };
     }
     componentDidMount() {
-        const apiUrl = 'http://35.154.116.123/sunpharma/register/getdashboarddetails';
+        const apiUrl = 'http://sunpharma.xyz/register/getdashboarddetails';
         fetch(apiUrl)
             .then(res => res.json())
             .then(

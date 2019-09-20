@@ -19,8 +19,6 @@ import {
         designationErr:"",
         locationErr:"",
         message: "",
-        username:"",
-        message: '',
         ShowMessage: false,
     };
     handleEvent = (e) => {
@@ -28,7 +26,7 @@ import {
     }
 
     resetform = () => {
-        this.setState({name:"",email:"",contact:""})
+        this.setState({name:"",email:"",contact:"",designation:"",location:""})
     }
 
     validate = () => {
@@ -80,9 +78,8 @@ import {
                 contact : this.state.contact,
                 designation : this.state.designation,
                 location : this.state.location,
-                username: this.state.username
             };
-            const url = 'http://35.154.116.123/sunpharma/register/addmr';
+            const url = 'http://192.168.0.4/register/register/addmr';
             const myheader = new Headers();
             myheader.append('Content-Type','application/json');
             const options = {
@@ -108,6 +105,7 @@ import {
                 }
             )
         }
+        this.resetform();
     }
     render() {
         if(localStorage.getItem("id") != null)
@@ -138,7 +136,6 @@ import {
                             </div>
                         </div>
                             <div className="container mt-5">
-                        <div className="text-danger text-success">{this.state.message}</div>
                         <div className="card-box">
                                     <h2 className="text-center text-success">New Medical Representative</h2>
                                     <hr />
@@ -189,15 +186,6 @@ import {
                                                 <div className="text-danger">{this.state.locationErr}</div>
                                         </div>
                                 </div>
-                                        <div className="row mt-3">
-                                            <div className="col-md-2">
-                                               
-                                                <strong><label for=""> Username:</label></strong>
-                                            </div>
-                                            <div className="col-md-8">
-                                                <input type="text" id="username" className="form-control" value={this.state.username} onChange={this.handleEvent} placeholder="Username" name="username" />
-                                            </div>
-                                        </div>
                                 <hr />
                                 <div className="row mt-2">
                                     <div className="col-md-8">

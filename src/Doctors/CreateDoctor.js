@@ -27,7 +27,7 @@ import {
     }
 
     componentDidMount() {
-        const apiUrl = 'http://35.154.116.123/sunpharma/register';
+        const apiUrl = 'http://192.168.0.4/register/register';
         fetch(apiUrl)
             .then(res => res.json())
             .then(
@@ -94,7 +94,7 @@ import {
                 contact: this.state.contact,
                 mrId: this.state.mrId
             };
-            const url = 'http://35.154.116.123/sunpharma/register/adddoctor';
+            const url = 'http://192.168.0.4/register/register/adddoctor';
             const myheader = new Headers();
             myheader.append('Content-Type', 'application/json');
             const options = {

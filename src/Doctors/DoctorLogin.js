@@ -23,7 +23,7 @@ class DoctorLogin extends Component {
             getContactNumber: this.state.contact,
             getLinkId: this.state.linkId
         };
-        const url = 'http://35.154.116.123/sunpharma/register/getdoctorcredentials';
+        const url = 'http://192.168.0.4/register/register/getdoctorcredentials';
         const myheader = new Headers();
         myheader.append('Content-Type', 'application/json');
         const options = {
@@ -54,7 +54,7 @@ class DoctorLogin extends Component {
             getLinkId: this.state.linkId,
             otp: this.state.otp,
         };
-        const url = 'http://35.154.116.123/sunpharma/register/checkcredentials';
+        const url = 'http://192.168.0.4/register/register/checkcredentials';
         const myheader = new Headers();
         myheader.append('Content-Type', 'application/json');
         const options = {

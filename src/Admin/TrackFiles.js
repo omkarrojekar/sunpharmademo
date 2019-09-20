@@ -20,7 +20,7 @@ import {
      };
    }
    componentDidMount() {
-     const apiUrl = 'http://35.154.116.123/sunpharma/register/filesharing';
+     const apiUrl = 'http://192.168.0.4/register/register/filesharing';
      fetch(apiUrl)
        .then(res => res.json())
        .then(

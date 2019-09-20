@@ -26,7 +26,7 @@ const datas = [];
      }
 
     componentDidMount() {
-        const apiUrl = 'http://35.154.116.123/sunpharma/register/';
+        const apiUrl = 'http://192.168.0.4/register/register/';
         fetch(apiUrl)
         .then(res => res.json())
         .then(

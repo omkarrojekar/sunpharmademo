@@ -46,7 +46,7 @@ class UserLogin extends Component {
                 username: this.state.username,
                 password: this.state.password
             };
-            const url = 'http://35.154.116.123/sunpharma/register/userlogin';
+            const url = 'http://192.168.0.4/register/register/userlogin';
             const myheader = new Headers();
             myheader.append('Content-Type', 'application/json');
             const options = {
@@ -110,7 +110,7 @@ class UserLogin extends Component {
 
                                         <div className="form-group ">
                                             <div className="col-12">
-                                                <input class="form-control" type="text" name="username" placeholder="Username" value={this.state.username} onChange={this.handleEvent} />
+                                                <input class="form-control" type="text" name="username" placeholder="Email Address" value={this.state.username} onChange={this.handleEvent} />
                                                 <div className="text-danger">{this.state.usernameErr}</div>
                                             </div>
                                         </div>
