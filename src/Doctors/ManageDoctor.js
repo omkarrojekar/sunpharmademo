@@ -17,13 +17,13 @@ import {
 
         };
         this.count = 1;
-    }
+    }http://sunpharma.xyz/register
      increase_count() {
          this.count = this.count + 1
      }
 
     componentDidMount() {
-        const apiUrl = 'http://192.168.0.4/register/register/alldoctors/';
+        const apiUrl = 'http://sunpharma.xyz/register/alldoctors/';
         fetch(apiUrl)
             .then(res => res.json())
             .then(

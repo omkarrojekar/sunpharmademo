@@ -22,7 +22,7 @@ class ViewSharedFile extends Component {
             getFileId: this.state.fileId,
             getSharedId: this.state.sharedId
         };
-        const url = 'http://192.168.0.4/register/register/getfile';
+        const url = 'http://sunpharma.xyz/register/getfile';
         const myheader = new Headers();
         myheader.append('Content-Type', 'application/json');
         const options = {
@@ -43,7 +43,7 @@ class ViewSharedFile extends Component {
                     this.setState({ error })
                 }
             )
-    const ApiUrl = 'http://192.168.0.4/register/register/changeviewstatus';
+    const ApiUrl = 'http://sunpharma.xyz/register/changeviewstatus';
         fetch(ApiUrl, options)
             .then(res => res.json())
             .then(

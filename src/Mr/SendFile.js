@@ -22,8 +22,8 @@ class SendFile extends Component {
             getMrId: localStorage.getItem("userid"),
             getFileId:this.state.fileId
         };
-        const apiUrl = 'http://192.168.0.4/register/register/alldoctorsofmr/';
-        const apiUrl2 = 'http://192.168.0.4/register/register/getfile/';
+        const apiUrl = 'http://sunpharma.xyz/register/alldoctorsofmr/';
+        const apiUrl2 = 'http://sunpharma.xyz/register/getfile/';
         const myheader = new Headers();
         myheader.append('Content-Type', 'application/json');
         const options = {
@@ -70,7 +70,7 @@ class SendFile extends Component {
             doctorId: drId,
             filename: this.state.FileName,
         };   
-        const apiUrl = 'http://192.168.0.4/register/register/sendfiletodoctor/';
+        const apiUrl = 'http://sunpharma.xyz/register/sendfiletodoctor/';
         const myheader = new Headers();
         myheader.append('Content-Type', 'application/json');
         const options = {

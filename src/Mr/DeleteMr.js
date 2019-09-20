@@ -15,7 +15,7 @@ class DeleteMr extends Component {
         let data = {
             getMrId: this.state.mrId
         };
-        const url = 'http://192.168.0.4/register/register/deletemr';
+        const url = 'http://sunpharma.xyz/register/deletemr';
         const myheader = new Headers();
         myheader.append('Content-Type', 'application/json');
         const options = {
@@ -23,7 +23,7 @@ class DeleteMr extends Component {
             body: JSON.stringify(data),
             myheader
         };
-        //const apiUrl = 'http://192.168.0.4/register/register/';
+        //const apiUrl = 'http://sunpharma.xyz/register/';
         fetch(url, options)
             .then(res => res.json())
             .then(

@@ -21,7 +21,7 @@ class ViewFile extends Component {
         let data = {
             getFileId: this.state.fileId
         };
-        const url = 'http://192.168.0.4/register/register/getfile';
+        const url = 'http://sunpharma.xyz/register/getfile';
         const myheader = new Headers();
         myheader.append('Content-Type', 'application/json');
         const options = {

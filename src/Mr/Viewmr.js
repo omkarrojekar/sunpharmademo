@@ -21,7 +21,7 @@ import {
          let data = {
              getMrId: this.state.mrId
          };
-         const url = 'http://192.168.0.4/register/register/getmr';
+         const url = 'http://sunpharma.xyz/register/getmr';
          const myheader = new Headers();
          myheader.append('Content-Type', 'application/json');
          const options = {
@@ -29,7 +29,7 @@ import {
              body: JSON.stringify(data),
              myheader
          };
-         //const apiUrl = 'http://192.168.0.4/register/register/';
+         //const apiUrl = 'http://sunpharma.xyz/register/';
          fetch(url, options)
              .then(res => res.json())
              .then(

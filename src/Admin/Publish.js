@@ -49,7 +49,7 @@ export default class Publish extends Component {
             base64: this.state.base64ofZFile,
             fileDescription: this.state.fileDescription,
         };
-        const url = 'http://192.168.0.4/register/register/publish';
+        const url = 'http://sunpharma.xyz/register/publish';
         const myheader = new Headers();
         myheader.append('Content-Type', 'application/json');
         const options = {

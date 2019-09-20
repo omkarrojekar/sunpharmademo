@@ -15,7 +15,7 @@ class DeleteDoctor extends Component {
         let data = {
             getDrId: this.state.drId
         };
-        const url = 'http://192.168.0.4/register/register/deletedoctor';
+        const url = 'http://sunpharma.xyz/register/deletedoctor';
         const myheader = new Headers();
         myheader.append('Content-Type', 'application/json');
         const options = {
@@ -23,7 +23,7 @@ class DeleteDoctor extends Component {
             body: JSON.stringify(data),
             myheader
         };
-        //const apiUrl = 'http://192.168.0.4/register/register/';
+        //const apiUrl = 'http://sunpharma.xyz/register/register/';
         fetch(url, options)
             .then(res => res.json())
             .then(

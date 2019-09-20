@@ -17,7 +17,7 @@ import {
      }
 
      componentDidMount() {
-         const apiUrl = 'http://192.168.0.4/register/register/allfiles/';
+         const apiUrl = 'http://sunpharma.xyz/register/allfiles/';
          fetch(apiUrl)
              .then(res => res.json())
              .then(
